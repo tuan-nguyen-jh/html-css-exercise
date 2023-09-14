@@ -93,7 +93,7 @@ nav {
   border: none;
   background-color: transparent;
   color: #707070;
-  border-radius: 3px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -311,7 +311,7 @@ nav {
   width: 249px;
   height: 200px;
   border: 1px solid #707070;
-  border-radius: 15px;
+  border-radius: 20px;
 
   padding: 17px;
 
@@ -505,7 +505,7 @@ nav {
   height: 200px;
   background-color: #fff;
   border: 1px solid #707070;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 .carousel-dots {
