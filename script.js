@@ -90,8 +90,31 @@ collapsibles.forEach((collapsible) => {
 
 // JavaScript for toggling the mobile menu
 const menuToggle = document.querySelector(".menu-toggle");
+const closeIcon = document.querySelector(".close-icon");
 const navLinks = document.querySelector(".mobile-navbar");
 
 menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
+  toggleIcon();
 });
+
+closeIcon.addEventListener("click", () => {
+  navLinks.classList.remove("active");
+  toggleIcon();
+});
+
+function toggleIcon() {
+  if (navLinks.classList.contains("active")) {
+    // If the mobile menu is active, display the "X" icon and hide the hamburger icon
+    menuToggle.style.display = "none";
+    closeIcon.style.display = "block";
+  } else {
+    // If the mobile menu is closed, display the hamburger icon and hide the "X" icon
+    menuToggle.style.display = "flex";
+    closeIcon.style.display = "none";
+  }
+}
+
+// Initial call to set the correct icon based on the default state
+toggleIcon();
+
