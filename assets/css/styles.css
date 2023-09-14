@@ -666,6 +666,7 @@ nav {
 .subscribe-bottom > .line-img {
   position: absolute;
   left: -30%;
+  z-index: 99;
   top: -147%;
 }
 .subscribe-bottom > .plane-img {
@@ -690,6 +691,7 @@ nav {
   height: 48px;
   width: 299px;
   padding: 17px 12px;
+  z-index: 999;
 }
 
 .subscribe-form .input-container input {
