@@ -5,11 +5,19 @@
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --bg-color: #fafafa;
+  --gray-color: #707070; 
+  --white-color: #fff;
+  --text-color: #303030;
+  --blue-color: #0086d5;
+}
+
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fafafa;
+  background-color: var(--bg-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -26,7 +34,7 @@
   justify-content: space-between;
   height: 60px;
 
-  background-color: #fafafa;
+  background-color: var(--bg-color);
 }
 
 .menu-toggle {
@@ -38,7 +46,7 @@
 .bar {
   width: 25px;
   height: 3px;
-  background-color: #303030;
+  background-color: var(--text-color);
   margin: 3px 0;
 }
 
@@ -47,7 +55,7 @@
   width: 25px;
   font-weight: 300;
   font-size: 24px;
-  color: #303030;
+  color: var(--text-color);
   cursor: pointer;
   display: none; /* Initially hidden */
 }
@@ -80,7 +88,7 @@
   font-size: 14px;
   font-weight: 300;
   line-height: 21px;
-  color: #707070;
+  color: var(--gray-color);
 }
 
 .header-right {
@@ -107,7 +115,7 @@ nav {
 .button {
   border: none;
   background-color: transparent;
-  color: #707070;
+  color: var(--gray-color);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -117,8 +125,8 @@ nav {
 }
 
 .button-blue {
-  background-color: #0086d5;
-  color: #fff;
+  background-color: var(--blue-color);
+  color: var(--white-color);
 }
 
 .header-button {
@@ -131,7 +139,7 @@ nav {
   display: flex;
   justify-content: center;
   margin-top: 60px;
-  background-color: #fafafa;
+  background-color: var(--bg-color);
 }
 
 .hero-container {
@@ -143,7 +151,7 @@ nav {
   gap: 20px;
   height: 579px;
 
-  background-color: #fafafa;
+  background-color: var(--bg-color);
 }
 
 .hero-left {
@@ -158,14 +166,14 @@ nav {
   font-size: 48px;
   font-weight: 700;
   line-height: 72px;
-  color: #303030;
+  color: var(--text-color);
 }
 
 .hero-left p {
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
-  color: #707070;
+  color: var(--gray-color);
 
   margin-top: 20px;
 }
@@ -186,7 +194,7 @@ nav {
   padding: 20px 16px;
 
   font-size: 14px;
-  color: #707070;
+  color: var(--gray-color);
 }
 
 .hero-left .hero-button {
@@ -229,12 +237,12 @@ nav {
   font-weight: 700;
   font-size: 36px;
   line-height: 54px;
-  color: #303030;
+  color: var(--text-color);
 }
 
 .trusted-clients p {
   text-align: center;
-  color: #303030;
+  color: var(--text-color);
   display: block;
   width: 522px;
   margin-top: 10px;
@@ -247,7 +255,7 @@ nav {
 }
 
 .section-content > a {
-  color: #0086d5;
+  color: var(--blue-color);
   font-size: 14px;
   line-height: 21px;
   text-decoration: none;
@@ -257,7 +265,7 @@ nav {
   font-size: 38px;
   line-height: 57px;
   font-weight: 700;
-  color: #303030;
+  color: var(--text-color);
 
   width: 458px;
 
@@ -265,7 +273,7 @@ nav {
 }
 
 .section-content > p {
-  color: #303030;
+  color: var(--text-color);
   line-height: 24px;
   display: inline-block;
   width: 475px;
@@ -283,7 +291,7 @@ nav {
 .top-features {
   display: flex;
   justify-content: center;
-  background-color: #fafafa;
+  background-color: var(--bg-color);
 }
 
 .top-features-container {
@@ -296,7 +304,7 @@ nav {
 
   display: flex;
   align-items: center;
-  background-color: #fafafa;
+  background-color: var(--bg-color);
 }
 
 .top-features-left,
@@ -325,7 +333,7 @@ nav {
 .card {
   width: 249px;
   height: 200px;
-  border: 1px solid #707070;
+  border: 1px solid var(--gray-color);
   border-radius: 20px;
 
   padding: 17px;
@@ -354,7 +362,7 @@ nav {
 }
 
 .blue {
-  background-color: #0086d5;
+  background-color: var(--blue-color);
 }
 
 .yellow {
@@ -378,7 +386,7 @@ nav {
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
-  color: #303030;
+  color: var(--text-color);
 }
 
 .card > p {
@@ -409,7 +417,7 @@ nav {
 .testimonials {
   display: flex;
   justify-content: center;
-  background-color: #fafafa;
+  background-color: var(--bg-color);
 }
 
 .testimonials-container {
@@ -423,12 +431,12 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fafafa;
+  background-color: var(--bg-color);
 }
 
 .testimonials-container a,
 .faq a {
-  color: #0086d5;
+  color: var(--blue-color);
   font-size: 14px;
   line-height: 21px;
   text-decoration: none;
@@ -441,7 +449,7 @@ nav {
   font-weight: 700;
   font-size: 36px;
   line-height: 54px;
-  color: #303030;
+  color: var(--text-color);
   width: 440px;
   text-align: center;
 
@@ -499,7 +507,7 @@ nav {
 .carousel-item-bot > h4 {
   font-size: 18px;
   line-height: 27px;
-  color: #303030;
+  color: var(--text-color);
 }
 
 .carousel-item-bot > span {
@@ -518,8 +526,8 @@ nav {
 
 .carousel-item-container {
   height: 200px;
-  background-color: #fff;
-  border: 1px solid #707070;
+  background-color: var(--white-color);
+  border: 1px solid var(--gray-color);
   border-radius: 20px;
 }
 
@@ -588,8 +596,8 @@ nav {
   cursor: pointer;
   width: 100%;
   margin-bottom: 27px;
-  background-color: #fff;
-  border: 1px solid #707070;
+  background-color: var(--white-color);
+  border: 1px solid var(--gray-color);
   border-radius: 20px;
   text-align: left;
   transition: transform 0.3s ease-in;
@@ -597,7 +605,7 @@ nav {
 
 .collapsible {
   font-weight: 700;
-  color: #303030;
+  color: var(--text-color);
   font-size: 18px;
   display: flex;
   width: 100%;
@@ -644,11 +652,11 @@ nav {
 
 .subscribe-content {
   width: 100%;
-  background-color: #0086d5;
+  background-color: var(--blue-color);
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #fff;
+  color: var(--white-color);
   border-radius: 45px;
 }
 
@@ -699,7 +707,7 @@ nav {
 }
 
 .subscribe-form .input-container {
-  border: 1px solid #fff;
+  border: 1px solid var(--white-color);
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -710,21 +718,21 @@ nav {
 }
 
 .subscribe-form .input-container input {
-  background-color: #0086d5;
+  background-color: var(--blue-color);
   border: none;
   outline: none;
-  color: #fff;
+  color: var(--white-color);
   flex-grow: 1;
   padding: 0 12px;
 }
 
 .subscribe-form .input-container input::placeholder {
-  color: #fff;
+  color: var(--white-color);
 }
 
 .subscribe-form .subscribe-button {
   min-width: 164px;
-  background-color: #fff;
+  background-color: var(--white-color);
   color: #1c1c1c;
   height: 48px;
   padding: 0 22px;
@@ -798,7 +806,7 @@ nav {
 .footer-right .footer-col ul p {
   font-size: 18px;
   font-weight: 700;
-  color: #303030;
+  color: var(--text-color);
   padding: 10px 0;
 }
 
@@ -849,6 +857,10 @@ nav {
     gap: 10px;
   }
 
+  .header-right .header-buttons {
+    display: none;
+  }
+
   .menu-toggle {
     display: flex;
   }
@@ -863,7 +875,7 @@ nav {
     position: absolute;
     top: 60px;
     left: 0;
-    background-color: #fff;
+    background-color: var(--white-color);
     width: 100%;
     padding: 10px 0;
     text-align: center;
@@ -877,7 +889,7 @@ nav {
   ul.mobile-navbar li {
     margin: 10px 0;
     cursor: pointer;
-    color: #707070;
+    color: var(--gray-color);
     display: inline-block;
     width: 100%;
   }
@@ -1077,10 +1089,6 @@ nav {
 }
 
 @media screen and (max-width: 750px) {
-  .header-left .logo-img {
-    width: 70px;
-  }
-
   .top-features-right {
     flex-direction: column;
   }
